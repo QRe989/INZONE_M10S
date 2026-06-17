@@ -71,6 +71,11 @@
     text-align:center; font-weight:bold; font-size:.95em; margin:.8em 0;
   }
   .note{font-size:.82em; color:var(--gray); font-style:italic;}
+  .box-risk{
+    background:#FFF5F5; border-left:4px solid #CC3333; padding:.8em 1em;
+    margin:.8em 0; border-radius:0 6px 6px 0;
+  }
+  .tag.unresolved{background:#CC3333;}
   .grid2{display:grid; grid-template-columns:1fr 1fr; gap:1em;}
   @media (max-width:640px){.grid2{grid-template-columns:1fr;}}
   .stat{
@@ -95,7 +100,8 @@
   <a href="#roi">③ ROI・KGI/KPIの根拠</a>
   <a href="#target">④ ターゲット校25校の根拠</a>
   <a href="#sponsor">⑤ 既存スポンサー事例</a>
-  <a href="#sources">⑥ 出典一覧</a>
+  <a href="#issues">⑥ 未解決の問題点</a>
+  <a href="#sources">⑦ 出典一覧</a>
 </nav>
 
 <main>
@@ -404,8 +410,52 @@ NEXT GEN CUPを単年で終わらせず毎年継続することで、学校・�
 </section>
 
 <!-- ============================================== -->
+<section id="issues">
+<h2>⑥ 未解決の問題点（正直な評価）</h2>
+<p>この戦略案には複数の前提・推計に弱点があります。「解決済みです」と言い張れないものを正直に記録するための場所です。</p>
+
+<div class="box-risk">
+<span class="tag unresolved">未解決</span><strong>問題① 学生の購買力（構造的・解決困難）</strong><br>
+専門学校生の多くは奨学金・仕送り生活であり、自費で15万円を即座に出せる層は少ない。学割・買取オプション（KPI⑤）でハードルを下げる設計にしているが、それでも転換率15%はやや楽観的な想定である可能性がある。<br>
+<span class="note">→ 「即時購入」より「将来顧客の育成（LTV）」として位置づけるしかない。ROIが想定より下がるリスクは正直に認める。</span>
+</div>
+
+<div class="box-risk">
+<span class="tag unresolved">未解決（重大）</span><strong>問題② 配信視聴者50,000人の根拠がない</strong><br>
+KPI③「NEXT GEN CUP配信視聴者数50,000人」は、比較可能な先行実績データなしに設定した数字。ZETAなど国内トップチームの大会配信でも数万人規模であり、初年度の学生eスポーツ大会がその水準に達するかは不透明。仮に10,000人にとどまった場合、視聴者起因の販売台数は250台→50台に激減し、ROI計算が大きく崩れる。<br>
+<span class="note">→ 現時点で解決していない。この数字の達成可否でROIが最も敏感に動く変数。</span>
+</div>
+
+<div class="box-risk">
+<span class="tag unresolved">未解決</span><strong>問題④ GALLERIA（サードウェーブ）協賛の利益相反リスク</strong><br>
+スライド10でGALLERIAが「最上位PC機材を協賛提供する」と記載しているが、SONY主催イベントでGALLERIAが"脇役"になる構図のため、協賛動機が弱い可能性がある。実際に交渉した結果ではなく「例示」にとどまる。協賛が取れない場合、「約40万円クラスのPCが必要」という製品の弱みが大会環境でそのまま露出する。<br>
+<span class="note">→ 代替の協賛候補や別解は現時点で具体化していない。</span>
+</div>
+
+<div class="box-risk">
+<span class="tag unresolved">未解決</span><strong>問題⑤ 2年目800台（初年度の倍）の根拠がない</strong><br>
+「2年目ROI 約3.2倍」という数字は2年目800台達成が前提。初年度400台が仮に達成できたとしても、なぜ翌年に倍増するのかの定量的根拠がない。口コミ・大会継続・参加校増加などの複合効果を想定しているが、試算上の「希望シナリオ」にとどまる。<br>
+<span class="note">→ 2年目ROIは「うまくいけば到達できる上限」として説明するのが正直な立場。</span>
+</div>
+
+<div class="box-risk">
+<span class="tag unresolved">未解決</span><strong>問題⑥ 学校の承諾プロセスの過少評価</strong><br>
+「無償提供なら断る理由がない→承諾率70%」という論理は単純すぎる可能性がある。実際の学校法人は、企業との協賛契約に理事会・学校長承認・契約書締結・保険・管理責任の明確化が必要であり、決定まで数ヶ月かかるケースが多い。初年度に25校確保を1年内に完了できるかは不透明。<br>
+<span class="note">→ 解決していない。専任の渉外担当と十分なリードタイムが必要だが、この戦略案では触れていない。</span>
+</div>
+
+<div class="box-risk">
+<span class="tag unresolved">未解決</span><strong>問題⑦ 「買取オプション」の実施体制が未定義</strong><br>
+KPI⑤（学割・買取オプション利用率20%）のうち「買取オプション」は、誰がどう運用するかが具体化されていない（SONY直販・量販店連携・第三者業者提携のいずれも未確定）。<br>
+<span class="note">→ 解決していない。KPI⑤の達成に必要な仕組みが未定義のまま。</span>
+</div>
+
+<p class="note">【試算数字の不一致について】コスト試算スライドの合計上限は「2,050万円」と記載されているが、各項目の合計（850+800+300+200）は2,150万円になる。このWebページは算術的に正しい2,150万円を使用。スライド側に計算ミスがあります、修正期間を超えたため、修正できませんでした</p>
+</section>
+
+<!-- ============================================== -->
 <section id="sources">
-<h2>⑥ 出典・参考資料一覧</h2>
+<h2>⑦ 出典・参考資料一覧</h2>
 <ul class="source-list">
   <li><strong>ROI算出の根拠：</strong>Street Teams Co「Experiential Marketing ROI Statistics 2026」</li>
   <li><strong>ROI算出の根拠：</strong>Shikenso「Esports Sponsorship ROI Guide 2026」</li>
